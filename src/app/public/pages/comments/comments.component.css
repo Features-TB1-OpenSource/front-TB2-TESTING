@@ -1,0 +1,43 @@
+.content-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 10px;
+}
+.button-margin {
+  margin: 8px;
+}
+.selected {
+  background: linear-gradient(to right, #415F8C, #56B8B8);
+  color: white;
+}
+.star {
+  color: #d3a007;
+}
+.conduccion {
+  width: 100%;
+  height: 150px;
+  resize: none;
+}
+.comodidad {
+  width: 100%;
+  height: 150px;
+  resize: none;
+}
+.cortesia {
+  width: 100%;
+  height: 150px;
+  resize: none;
+}
+.ruta {
+  width: 100%;
+  height: 150px;
+  resize: none;
+}
+.submit-button {
+  background: linear-gradient(to bottom, #415F8C, #56B8B8);
+  color: white;
+}
+

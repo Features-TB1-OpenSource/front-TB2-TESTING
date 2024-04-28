@@ -1,0 +1,54 @@
+.centered-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 70%; /* Ajusta este valor según el tamaño que desees */
+}
+.search-input {
+  width: 50%; /* Ajusta este valor según el tamaño que desees */
+  border-radius: 30px; /* Ajusta este valor para cambiar el redondeo de los bordes */
+  border: none;
+  margin: auto;
+}
+.highlight {
+  background-color: #39BFBF; /* Cambia este valor al color de fondo que desees */
+}
+h2 {
+  text-align: center;
+}
+table {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+td {
+  padding: 10px;
+}
+td[colspan="2"] {
+  text-align: center;
+}
+.driver-info {
+  margin-right: 15px; /* Ajusta este valor según tus necesidades */
+}
+mat-icon {
+  color: #d3a007;
+}
+.soli {
+  width: 50px; /* Ajusta este valor según tus necesidades */
+  height: 30px; /* Ajusta este valor según tus necesidades */
+  font-size: 15px; /* Ajusta este valor según tus necesidades */
+  padding: 5px; /* Ajusta este valor según tus necesidades */
+  margin: auto; /* Centra el botón */
+}
+
+div {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; /* Añade esta línea */
+}
+
+mat-card {
+  flex: 1;
+  margin: 10px;
+  min-width: 300px; /* Añade esta línea */
+}

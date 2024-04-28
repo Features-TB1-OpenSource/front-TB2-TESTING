@@ -9,7 +9,7 @@ export class AppComponent {
   title = 'UniRider';
   options = [
     { path: '/home', title: 'Home'},
-    {path: '/plans',title: 'Plans'}
-
+    {path: '/plans',title: 'Plans'},
+    {path: '/unirider/maps', title: 'Maps'}
   ]
 }

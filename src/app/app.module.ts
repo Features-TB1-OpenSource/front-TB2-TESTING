@@ -24,6 +24,10 @@ import { InputTextModule } from 'primeng/inputtext';
 import { ButtonModule } from 'primeng/button';
 import { ToastModule } from 'primeng/toast';
 import { MessageService } from 'primeng/api';
+import { CommentsComponent } from './public/pages/comments/comments.component';
+import { MapsComponent } from './public/pages/maps/maps.component';
+import {MatToolbar} from "@angular/material/toolbar";
+ import {MatFormFieldModule} from "@angular/material/form-field";
 
 @NgModule({
   declarations: [
@@ -32,9 +36,13 @@ import { MessageService } from 'primeng/api';
     PlansComponent,
     LoginComponent,
     RegisterComponent,
+    CommentsComponent,
+    MapsComponent,
 
   ],
   imports: [
+
+    MatFormFieldModule,
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
@@ -55,6 +63,7 @@ import { MessageService } from 'primeng/api';
     ButtonModule,
     HttpClientModule,
     ToastModule,
+    MatToolbar
   ],
   providers: [MessageService,
     provideAnimationsAsync()

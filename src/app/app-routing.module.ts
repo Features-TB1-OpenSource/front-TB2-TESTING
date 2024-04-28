@@ -4,7 +4,10 @@ import { LoginComponent } from './access/enter/login/login.component';
 import { RegisterComponent } from './access/enter/register/register.component';
 import {HomeComponent} from "./public/pages/home/home.component";
 import {PlansComponent} from "./public/pages/plans/plans.component";
+import {MapsComponent} from "./public/pages/maps/maps.component";
+import {CommentsComponent} from "./public/pages/comments/comments.component";
 import {authGuard} from "./access/guards/auth.guard";
+
 
 const routes: Routes = [
   {path: 'login', component: LoginComponent},
@@ -17,6 +20,15 @@ const routes: Routes = [
     component: PlansComponent,
     canActivate: [authGuard]
   },
+  { path: 'unirider/maps',
+    component: MapsComponent,
+    canActivate: [authGuard]
+  },
+  { path: 'comments',
+    component: CommentsComponent,
+    canActivate: [authGuard]
+  },
+
   {
     path: '', redirectTo: 'home', pathMatch: 'full'
   }

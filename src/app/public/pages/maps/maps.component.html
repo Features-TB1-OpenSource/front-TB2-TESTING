@@ -1,0 +1,43 @@
+<div style="display: flex; justify-content: space-between;">
+  <mat-card style="flex: 1; margin-right: 10px;">
+    <mat-form-field class="search-input">
+      <mat-icon matPrefix>search</mat-icon>
+      <input matInput placeholder="">
+    </mat-form-field>
+    <img mat-card-image class="centered-image" src="assets/img/mapa.png" alt="Map image">
+  </mat-card>
+
+  <mat-card style="flex: 1; margin-left: 10px;">
+    <mat-card-content>
+      <h2>Información del viaje</h2>
+      <table style="border: none;">
+        <tr>
+          <td>Distancia</td>
+          <td><span class="highlight">7 KM</span></td>
+        </tr>
+        <tr>
+          <td colspan="2"><h2>Conductor disponible</h2></td>
+        </tr>
+        <tr>
+          <td>Punto de recojo</td>
+          <td>Av. 28 de Julio 333, Lima 15046</td>
+        </tr>
+        <tr>
+          <td rowspan="2"><img src="assets/img/auto.jpg" alt="Car image" style="width: 83px; height: 62px;"></td>
+          <td>KIA-CERATO</td>
+        </tr>
+        <tr>
+          <td>AEF-717</td>
+        </tr>
+        <tr>
+          <td colspan="2">
+            <span class="driver-info">Patricio Sánchez</span>
+            <span class="driver-info">4.5</span>
+            <mat-icon class="driver-info" [routerLink]="['/comments']">star</mat-icon>
+          </td>
+        </tr>
+      </table>
+      <button class="soli" color="primary" style="width: 100%;">Solicitar viaje</button>
+    </mat-card-content>
+  </mat-card>
+</div>

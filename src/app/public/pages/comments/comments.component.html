@@ -1,0 +1,45 @@
+<h2>Califica a tu Conductor</h2>
+<div style="display: flex; justify-content: space-between;">
+  <mat-card class="card1" style="flex: 1; margin: 10px;">
+    <mat-card-content>
+      <h3>Califica la puntualidad del conductor</h3>
+      <div class="content-center">
+        <button class="button-margin" mat-raised-button color="primary" (click)="selectButton($event)">A tiempo</button>
+        <button class="button-margin" mat-raised-button color="primary" (click)="selectButton($event)">Regular</button>
+        <button class="button-margin" mat-raised-button color="primary" (click)="selectButton($event)">Tarde</button>
+      </div>
+      <h3>Puntaje</h3>
+      <div class="stars">
+        <button mat-icon-button
+                *ngFor="let star of [1, 2, 3, 4, 5]; let i = index"
+                [color]="i < rating ? 'primary' : ''"
+                (click)="rating = i + 1">
+          <mat-icon class="star">star</mat-icon>
+        </button>
+      </div>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="card2" style="flex: 1; margin: 10px;">
+    <mat-card-content>
+      <h3>Conducción segura</h3>
+      <textarea class="conduccion" placeholder="Escribe tu comentario aquí..."></textarea>
+      <h3>Comodidad del viaje</h3>
+      <textarea class="comodidad" placeholder="Escribe tu comentario aquí..."></textarea>
+    </mat-card-content>
+  </mat-card>
+
+  <mat-card class="card3" style="flex: 1; margin: 10px;">
+    <mat-card-content>
+      <h3>Cortesía y profesionalismo</h3>
+      <textarea class="cortesia" placeholder="Escribe tu comentario aquí..."></textarea>
+      <h3>Conocimiento de la ruta</h3>
+      <textarea class="ruta" placeholder="Escribe tu comentario aquí..."></textarea>
+    </mat-card-content>
+  </mat-card>
+
+</div>
+
+<div class="comentar" style="display: flex; justify-content: center; margin-top: 20px;">
+  <button mat-raised-button class="submit-button">Enviar comentario</button>
+</div>

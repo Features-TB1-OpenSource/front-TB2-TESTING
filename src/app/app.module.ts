@@ -17,12 +17,21 @@ import {MatToolbarModule} from "@angular/material/toolbar";
 import {MatCardModule} from "@angular/material/card";
 import {MatGridListModule} from "@angular/material/grid-list";
 import { PlansComponent } from './public/pages/plans/plans.component';
+import { LoginComponent } from './access/enter/login/login.component';
+import { RegisterComponent } from './access/enter/register/register.component';
+import  {CardModule} from 'primeng/card';
+import { InputTextModule } from 'primeng/inputtext';
+import { ButtonModule } from 'primeng/button';
+import { ToastModule } from 'primeng/toast';
+import { MessageService } from 'primeng/api';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     PlansComponent,
+    LoginComponent,
+    RegisterComponent,
 
   ],
   imports: [
@@ -40,9 +49,14 @@ import { PlansComponent } from './public/pages/plans/plans.component';
     MatPaginatorModule,
     MatToolbarModule,
     MatCardModule,
-    MatGridListModule
+    MatGridListModule,
+    CardModule,
+    InputTextModule,
+    ButtonModule,
+    HttpClientModule,
+    ToastModule,
   ],
-  providers: [
+  providers: [MessageService,
     provideAnimationsAsync()
   ],
   bootstrap: [AppComponent]

@@ -1,0 +1,68 @@
+.custom-button {
+  background-color: #2dffca; /* Color de fondo */
+  border: none; /* Sin borde */
+  color: #000000; /* Color del texto */
+  padding: 15px 32px; /* Espacio alrededor del texto */
+  text-align: center; /* Alineación del texto */
+  text-decoration: none; /* Sin subrayado */
+  display: inline-block; /* Mostrar como elemento en línea */
+  font-size: 16px; /* Tamaño de la fuente */
+  margin: 4px 2px; /* Margen entre botones */
+  cursor: pointer; /* Cursor al pasar por encima */
+  border-radius: 8px; /* Bordes redondeados */
+  transition-duration: 0.4s; /* Duración de la transición */
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+}
+
+.custom-button:hover {
+  background-color: #000000;
+  color: white;
+}
+
+/**/
+.container {
+  max-width: 900px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar el contenedor horizontalmente */
+  padding: 20px; /* Añadir espacio alrededor del contenido */
+  text-align: center; /* Centrar el texto */
+}
+ h3 {
+   margin-bottom: 100px;
+ }
+h1 {
+  font-size: 5em; /* Tamaño grande para el encabezado */
+  margin-bottom: 70px;
+
+  margin-left: 300px;
+  display: flex;
+}
+
+p {
+  font-size: 1.5em;
+  margin-bottom: 30px;
+  margin-left: 50px;
+}
+
+
+img {
+  margin-left: 270px;
+}
+
+.centered-container {
+  display: flex;
+  justify-content: center;
+  margin-top: -600px; /* Mueve el elemento hacia arriba 600px */
+}
+
+
+.custom-button {
+  margin-left: 350px;
+}
+
+#right {
+  float: right;
+  font-size: 0.3em;
+}

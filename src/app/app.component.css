@@ -1,3 +1,26 @@
+mat-toolbar {
+  background-color: #288383;
+}
+
+.toolbar-title {
+  font-size: 2em; /* Ajusta este valor a tu gusto */
+}
+
+.gray-icon {
+  color: gray;
+}
+
 .mat-spacer {
   flex: 1 1 auto;
+}
+
+.toolbar-title {
+  font-size: 2em;
+  color: white;
+}
+
+
+.user-photo,
+.notification-icon {
+  margin-left: auto;
 }

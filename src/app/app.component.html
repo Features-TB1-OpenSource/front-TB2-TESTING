@@ -1,7 +1,9 @@
-<mat-toolbar color="green">
-  <h1>UniRider</h1>
+<mat-toolbar>
+  <h1 class="toolbar-title">UniRider</h1>
   <div class="mat-spacer"></div>
-  <a mat-button *ngFor="let option of options"
+  <a mat-button class="nav-link" *ngFor="let option of options"
      [routerLink]="option.path">{{ option.title }}</a>
+  <mat-icon class="notification-icon gray-icon">notifications</mat-icon>
+  <img src="path_to_user_photo" alt=" " class="user-photo">
 </mat-toolbar>
 <router-outlet></router-outlet>

@@ -63,6 +63,8 @@ mat-card-subtitle{
 mat-card-subtitle p {
   color: white;
   font-size: 20px;
+  align-items: center;
+  text-align: center;
 }
 
 
@@ -70,6 +72,9 @@ mat-card-subtitle p {
 .planes .pricing-wrapper {
   width: 960px;
   margin: 40px auto 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .planes .pricing-table {
@@ -208,9 +213,6 @@ mat-card-subtitle p {
   background: #228799;
 }
 
-/** ================
- * Responsive
- ===================*/
 @media only screen and (min-width: 768px) and (max-width: 959px) {
   .planes .pricing-wrapper {
     width: 768px;
